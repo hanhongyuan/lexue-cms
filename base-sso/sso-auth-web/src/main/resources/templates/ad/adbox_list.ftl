@@ -16,7 +16,7 @@
 		<div class="admin-main">
 
 			<blockquote class="layui-elem-quote" style="border-left:0px solid #009688;">
-				<@common.permission per="sys:dict:add">
+				<@common.permission per="sys:adbox:add">
                     <a href="javascript:;" class="layui-btn layui-btn-small" id="add">
                         <i class="layui-icon">&#xe608;</i> 添加信息
                     </a>
@@ -95,10 +95,10 @@
                     {{# };
                     }}</td>
 				<td>
-					<@common.permission per="sys:dict:save">
+					<@common.permission per="sys:adbox:save">
                         <a href="javascript:;" data-id="{{ item.id }}" data-opt="edit" class="layui-btn layui-btn-mini"><i class="layui-icon">&#xe642;</i>编辑</a>
 					</@common.permission>
-					<@common.permission per="sys:dict:delete">
+					<@common.permission per="sys:adbox:delete">
                         <a href="javascript:;" data-id="{{ item.id }}" data-opt="del" class="layui-btn layui-btn-danger layui-btn-mini"><i class="layui-icon">&#xe640;</i>删除</a>
 					</@common.permission>
 				</td>

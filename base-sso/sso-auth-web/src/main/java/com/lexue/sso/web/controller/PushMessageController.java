@@ -2,6 +2,7 @@ package com.lexue.sso.web.controller;
 
 import com.alibaba.fastjson.JSON;
 import com.lexue.base.annotation.SystemControllerLog;
+import com.lexue.base.annotation.ssoauth.Permission;
 import com.lexue.base.domain.PushMessage;
 import com.lexue.base.util.DateUtils;
 import com.lexue.base.util.ResponseResult;
@@ -43,12 +44,14 @@ public class PushMessageController extends BaseController{
     NotificationManagerFeginClient notificationManagerFeginClient;
 
     @SystemControllerLog(module = "消息推送管理",method = "消息推送列表")
+    @Permission("sys:push:list")
     @RequestMapping(value ={"/","/list"},method = RequestMethod.GET)
     public String index(){
         return "push/list";
     }
 
     @SystemControllerLog(module = "消息推送管理",method = "新增消息推送")
+    @Permission("sys:push:add")
     @RequestMapping(value = "/add",method = RequestMethod.GET)
     public String add(String id,Model model){
         model.addAttribute("videoList",videoFeignClient.findAllVideo(getClient()).getData());
@@ -75,6 +78,7 @@ public class PushMessageController extends BaseController{
         return data;
     }
     @SystemControllerLog(module = "消息推送管理",method = "保存消息推送")
+    @Permission("sys:push:save")
     @RequestMapping(value = "/save",method = RequestMethod.POST)
     public String save(PushMessage pushMessage){
         logger.info("PushMessageController save start");
@@ -144,6 +148,7 @@ public class PushMessageController extends BaseController{
         return "success";
     }
     @SystemControllerLog(module = "消息推送管理",method = "删除消息推送")
+    @Permission("sys:push:delete")
     @RequestMapping(value = "/delete",method = RequestMethod.POST)
     public void delete(String id){
         logger.info("PushMessageController delete id is {}"+id);

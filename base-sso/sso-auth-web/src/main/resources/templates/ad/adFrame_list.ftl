@@ -16,7 +16,7 @@
 		<div class="admin-main">
 
 			<blockquote class="layui-elem-quote" style="border-left:0px solid #009688;">
-				<@common.permission per="sys:dict:add">
+				<@common.permission per="sys:adframe:add">
                     <a href="javascript:;" class="layui-btn layui-btn-small" id="add">
                         <i class="layui-icon">&#xe608;</i> 添加信息
                     </a>
@@ -73,8 +73,12 @@
                         <a href="javascript:layui.stopAd('{{ item.id }}');" data-id="{{ item.id }}" data-opt="stop" class="layui-btn layui-btn-mini layui-btn-warm"><i class="layui-icon">&#xe651;</i>下线</a>
                         {{# } else { }}
                         <a href="javascript:layui.startAd('{{ item.id }}');" data-id="{{ item.id }}" data-opt="open" class="layui-btn layui-btn-mini"><i class="layui-icon">&#xe652;</i>上线</a>
-                        <a href="javascript:;" data-id="{{ item.id }}" data-opt="edit" class="layui-btn layui-btn-mini"><i class="layui-icon">&#xe642;</i>编辑</a>
+						<@common.permission per="sys:adframe:save">
+						<a href="javascript:;" data-id="{{ item.id }}" data-opt="edit" class="layui-btn layui-btn-mini"><i class="layui-icon">&#xe642;</i>编辑</a>
+						</@common.permission>
+						<@common.permission per="sys:adframe:save">
                         <a href="javascript:;" data-id="{{ item.id }}" data-opt="del" class="layui-btn layui-btn-danger layui-btn-mini"><i class="layui-icon">&#xe640;</i>删除</a>
+						</@common.permission>
                         {{# };}}
 				</td>
 			</tr>
