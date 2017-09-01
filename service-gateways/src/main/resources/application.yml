@@ -1,0 +1,46 @@
+eureka:
+  instance:
+    #instanceId: ${spring.cloud.client.ipAddress}:${server.port}
+    prefer-ip-address: true
+  client:
+    service-url:
+      defaultZone: http://user:${REGISTRY_SERVER_PASSWORD:password}@127.0.0.1:1990/eureka/
+spring:
+  rabbitmq:
+    host: 127.0.0.1
+  sleuth:
+    sampler:
+      percentage: 1
+    integration:
+      enabled: false
+    scheduled:
+      skip-pattern: "^org.*HystrixStreamTask$"
+
+security:
+  user:
+    name: admin
+    password: ${MONITOR_SERVER_PASSWORD:admin}
+
+server:
+  port: 8060
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 20000
+
+ribbon:
+  ReadTimeout: 10000
+  ConnectTimeout: 10000
+
+zuul:
+  ignoredServices: '*'
+  routes:
+    sso-auth-service:
+      path: /sso-auth-service/**
+      sensitiveHeaders: "*"
+    sso-auth-web:
+      path: /sso-auth-web/**
+      sensitiveHeaders: "*"

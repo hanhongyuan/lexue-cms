@@ -1,0 +1,17 @@
+# Web容器配置
+server:
+  port: 8090
+
+eureka:
+  instance:
+    instanceId: ${spring.cloud.client.ipAddress}:${server.port}
+    preferIpAddress: true
+  client:
+    serviceUrl:
+      defaultZone: http://user:${REGISTRY_SERVER_PASSWORD:password}@10.10.200.167:1990/eureka/
+  server:
+    enable-self-preservation: false
+security:
+   user:
+      name: user
+      password: ${REGISTRY_SERVER_PASSWORD:password}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/base-sso.iml" filepath="$PROJECT_DIR$/base-sso.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cms-lexue/cms-lexue.iml" filepath="$PROJECT_DIR$/cms-lexue/cms-lexue.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cms-service/cms-service.iml" filepath="$PROJECT_DIR$/cms-service/cms-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cms-service/cms-service.iml" filepath="$PROJECT_DIR$/cms-service/cms-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sso-auth-service/sso-auth-service.iml" filepath="$PROJECT_DIR$/sso-auth-service/sso-auth-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sso-auth-web/sso-auth-web.iml" filepath="$PROJECT_DIR$/sso-auth-web/sso-auth-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sso-oa/sso-oa.iml" filepath="$PROJECT_DIR$/sso-oa/sso-oa.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="base-api" />
+        <module name="base-pay" />
+        <module name="basecms" />
+        <module name="cms-lexue" />
+        <module name="cms-service" />
+        <module name="cms-service (1)" />
+        <module name="cms-service (2)" />
+        <module name="cms-web" />
+        <module name="service-config" />
+        <module name="service-eureka" />
+        <module name="service-gateways" />
+        <module name="service-monitor" />
+        <module name="service-zipkin" />
+        <module name="servicesdfs" />
+        <module name="sso-auth-service" />
+        <module name="sso-auth-service (1)" />
+        <module name="sso-auth-web" />
+        <module name="sso-auth-web (1)" />
+        <module name="sso-oa" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="base-api" target="1.8" />
+      <module name="base-cms" target="1.8" />
+      <module name="base-pay" target="1.8" />
+      <module name="base-sso" target="1.8" />
+      <module name="cms-lexue" target="1.8" />
+      <module name="cms-servic" target="1.8" />
+      <module name="cms-service" target="1.8" />
+      <module name="cms-service (1)" target="1.8" />
+      <module name="cms-service (2)" target="1.8" />
+      <module name="cms-service -lexue" target="1.8" />
+      <module name="cms-web" target="1.8" />
+      <module name="lexue-system" target="1.6" />
+      <module name="service-config" target="1.6" />
+      <module name="service-eureka" target="1.6" />
+      <module name="service-gateways" target="1.6" />
+      <module name="service-monitor" target="1.6" />
+      <module name="service-zipkin" target="1.6" />
+      <module name="sso-auth-service" target="1.8" />
+      <module name="sso-auth-service (1)" target="1.8" />
+      <module name="sso-auth-web" target="1.8" />
+      <module name="sso-oa" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

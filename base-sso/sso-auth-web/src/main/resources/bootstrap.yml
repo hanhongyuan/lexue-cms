@@ -1,0 +1,62 @@
+spring:
+  profiles:
+    active: dev
+  sso-auth-name: cms-service
+  base-manager-service: base-manager-service
+  application:
+    name: cms-web
+  http:
+    encoding: { charset: UTF-8, enable: true, force: true }
+  freemarker:
+    cache: false
+    expose-session-attributes: true
+    expose-request-attributes: true
+    suffix: .ftl
+    charset: UTF-8
+    content-type: text/html; charset=utf-8
+    allow-request-override: true
+    check-template-location: true
+    prefix:
+    template-loader-path: classpath:/templates/
+    request-context-attribute: request
+
+#  cloud:
+#      config:
+#        uri: http://10.10.200.167:1991
+#        fail-fast: true
+#        username: user
+#        password: ${CONFIG_SERVER_PASSWORD:password}
+#        retry:
+#          initial-interval: 2000
+#          max-interval: 10000
+#          multiplier: 2
+#          max-attempts: 10
+#  redis:
+#      host: 127.0.0.1
+#      port: 6379
+#      # REDIS (RedisProperties)
+#      # Redis数据库索引（默认为0）
+#      database: 0
+#      # Redis服务器连接密码（默认为空）
+#      #password: 123456
+#      # 连接池最大连接数（使用负值表示没有限制）
+#      # 连接超时时间（毫秒）
+#      timeout: 0
+info:
+  name: cms-web
+lexue:
+  application:
+    name: 乐学高考运营平台
+    client: gk
+    dnsurl: http://advod.lexue.com/
+    endpoint: http://oss-cn-beijing.aliyuncs.com
+    key: QHIg7QJEi5EGtt35
+    secret: zOCjz0PWN9dWgqgRc7gpfCAwHcvhNK
+    bucket: gaokao-ad
+    video: ad_video/
+    picture: ad_picture/
+wx:
+  wxGroup:
+    url: http://localhost:8080
+  group:
+    url: http://localhost:8090

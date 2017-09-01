@@ -1,0 +1,19 @@
+server:
+  port: 8070
+eureka:
+  instance:
+    instanceId: ${spring.cloud.client.ipAddress}:${server.port}
+    preferIpAddress: true
+    metadata-map:
+          user.name: ${security.user.name}
+          user.password: ${security.user.password}
+  client:
+    serviceUrl:
+      defaultZone:  http://user:${REGISTRY_SERVER_PASSWORD:password}@127.0.0.1:1990/eureka/
+      #defaultZone:  http://10.10.200.163:8761/eureka/
+      #defaultZone:  http://10.10.200.151:8761/eureka/
+
+security:
+  user:
+    name: user
+    password: ${CONFIG_SERVER_PASSWORD:password}

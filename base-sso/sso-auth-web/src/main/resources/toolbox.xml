@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<toolbox>
+    <tool>
+        <key>math</key>
+        <scope>application</scope>
+        <class>org.apache.velocity.tools.generic.MathTool</class>
+    </tool>
+    <tool>
+        <key>date</key>
+        <scope>application</scope>
+        <class>org.apache.velocity.tools.generic.DateTool</class>
+        <parameter name="format" value="yyyy/MM/dd HH:mm:ss"/>
+        <!-- 设置local，防止出现问题 --> 
+        <parameter name="locale" value="zh_CN"/> 
+         <!-- 设置timezone，防止出现问题 --> 
+        <parameter name="timezone" value="Asia/Shanghai"/> 
+    </tool>
+    <tool>
+    	<key>cookie</key>
+    	<scope>request</scope>
+    	<class>com.wolfking.back.core.tool.CookieTool</class>
+    </tool>
+</toolbox>

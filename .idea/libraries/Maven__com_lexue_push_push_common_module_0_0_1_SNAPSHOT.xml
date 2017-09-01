@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.lexue.push:push-common-module:0.0.1-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/lexue/push/push-common-module/0.0.1-SNAPSHOT/push-common-module-0.0.1-20170901.014110-5.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/lexue/push/push-common-module/0.0.1-SNAPSHOT/push-common-module-0.0.1-20170901.014110-5-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/lexue/push/push-common-module/0.0.1-SNAPSHOT/push-common-module-0.0.1-20170901.014110-5-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

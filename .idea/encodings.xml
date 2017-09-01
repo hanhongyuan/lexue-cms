@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/base-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/base-cms" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/base-cms/cms-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/base-cms/cms-web" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/base-pay" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/base-sso" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/base-sso/cms-lexue" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/base-sso/cms-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/base-sso/cms-service-lexue" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/base-sso/sso-auth-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/base-sso/sso-auth-web" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/service-config" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/service-eureka" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/service-gateways" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/service-monitor" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/service-zipkin" charset="UTF-8" />
+  </component>
+</project>

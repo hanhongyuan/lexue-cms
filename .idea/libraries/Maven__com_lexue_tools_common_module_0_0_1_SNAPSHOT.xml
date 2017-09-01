@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.lexue.tools:common-module:0.0.1-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/lexue/tools/common-module/0.0.1-SNAPSHOT/common-module-0.0.1-20170828.061059-6.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/lexue/tools/common-module/0.0.1-SNAPSHOT/common-module-0.0.1-20170828.061059-6-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/lexue/tools/common-module/0.0.1-SNAPSHOT/common-module-0.0.1-20170828.061059-6-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

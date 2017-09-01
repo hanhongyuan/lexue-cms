@@ -1,0 +1,42 @@
+spring:
+  profiles:
+    active: dev
+  application:
+    name: videoBase-service
+  http:
+    encoding: { charset: UTF-8, enable: true, force: true }
+#  cloud:
+#     config:
+#       uri: http://10.10.200.167:1991
+#       fail-fast: true
+#       username: user
+#       password: ${CONFIG_SERVER_PASSWORD:password}
+#       retry:
+#         initial-interval: 2000
+#         max-interval: 10000
+#         multiplier: 2
+#         max-attempts: 10
+  datasource:
+      driverClassName: com.mysql.jdbc.Driver
+      type: com.zaxxer.hikari.HikariDataSource
+      url: jdbc:mysql://10.10.200.152:3306/VideoBase?useUnicode=true&characterEncoding=utf-8
+      username: liutsi
+      password: K78NY3cS
+      hikari:
+        minimum-idle: 10
+        maximum-pool-size: 10
+        idle-timeout: 600000
+        max-lifetime: 1800000
+        connection-timeout: 30000
+        connection-test-query: SELECT 1
+        pool-name: videobase
+
+info:
+  name: videoBase-service
+
+mybatis:
+  config-location: classpath:/mybatis-config.xml
+  # 下面的配置注释掉，目前没有使用xml的配置，全部使用自定义的注解和基类统一的dao service
+  # mapper-locations: classpath:/mappings/**/*.xml
+  type-aliases-package: com.lexue
+  #数据库的配置

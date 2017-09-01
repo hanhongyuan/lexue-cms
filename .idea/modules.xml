@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/base-api/base-api.iml" filepath="$PROJECT_DIR$/base-api/base-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/base-cms/base-cms.iml" filepath="$PROJECT_DIR$/base-cms/base-cms.iml" />
+      <module fileurl="file://$PROJECT_DIR$/base-pay/base-pay.iml" filepath="$PROJECT_DIR$/base-pay/base-pay.iml" />
+      <module fileurl="file://$PROJECT_DIR$/base-sso/base-sso.iml" filepath="$PROJECT_DIR$/base-sso/base-sso.iml" />
+      <module fileurl="file://$PROJECT_DIR$/base-sso/cms-service/cms-service.iml" filepath="$PROJECT_DIR$/base-sso/cms-service/cms-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/base-cms/cms-service/cms-service (1).iml" filepath="$PROJECT_DIR$/base-cms/cms-service/cms-service (1).iml" />
+      <module fileurl="file://$PROJECT_DIR$/base-cms/cms-web/cms-web.iml" filepath="$PROJECT_DIR$/base-cms/cms-web/cms-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lexue-system.iml" filepath="$PROJECT_DIR$/lexue-system.iml" />
+      <module fileurl="file://$PROJECT_DIR$/service-config/service-config.iml" filepath="$PROJECT_DIR$/service-config/service-config.iml" />
+      <module fileurl="file://$PROJECT_DIR$/service-eureka/service-eureka.iml" filepath="$PROJECT_DIR$/service-eureka/service-eureka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/service-gateways/service-gateways.iml" filepath="$PROJECT_DIR$/service-gateways/service-gateways.iml" />
+      <module fileurl="file://$PROJECT_DIR$/service-monitor/service-monitor.iml" filepath="$PROJECT_DIR$/service-monitor/service-monitor.iml" />
+      <module fileurl="file://$PROJECT_DIR$/service-zipkin/service-zipkin.iml" filepath="$PROJECT_DIR$/service-zipkin/service-zipkin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/base-sso/sso-auth-service/sso-auth-service.iml" filepath="$PROJECT_DIR$/base-sso/sso-auth-service/sso-auth-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/base-sso/sso-auth-web/sso-auth-web.iml" filepath="$PROJECT_DIR$/base-sso/sso-auth-web/sso-auth-web.iml" />
+    </modules>
+  </component>
+</project>
